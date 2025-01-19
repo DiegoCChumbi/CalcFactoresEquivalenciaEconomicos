@@ -3,22 +3,32 @@
 <head>
     <title>Factores de equivalencia</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="Icon/price_change_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
 </head>
 <body>
     <h1>Factores de equivalencia</h1>
-
-    <form id="input">
-        <label for="i">i (%):</label>
-        <input type="number" id="i" name="i" step="any" required>
-        <br>
-        <label for="n">n:</label>
-        <input type="number" id="n" name="n" step="any" required>
-        <br>
-        <label for="g">g (%):</label>
-        <input type="number" id="g" name="g" step="any">
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+    <div id="contenedor">
+        <div>
+            <img src="Imagenes/grafico1.png" alt="Imagen1" class="rotate-right">
+        </div>
+        <div>
+            <form id="input">
+                <label for="i">i (%):</label>
+                <input type="number" id="i" name="i" step="any" required>
+                <br>
+                <label for="n">n:</label>
+                <input type="number" id="n" name="n" step="any" required>
+                <br>
+                <label for="g">g (%):</label>
+                <input type="number" id="g" name="g" step="any">
+                <br>
+                <input type="submit" value="Calcular">
+            </form>
+        </div>
+        <div>
+            <img src="Imagenes/grafico2.png" alt="Imagen2" class="rotate-left">
+        </div>
+    </div>
 
     <h2>Equivalencias</h2>
     <table>
