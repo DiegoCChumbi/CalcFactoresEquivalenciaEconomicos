@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factores de equivalencia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Factores de equivalencia</h1>
+
+    <form id="input">
+        <label for="i">i (%):</label>
+        <input type="number" id="i" name="i" step="any" required>
+        <br>
+        <label for="n">n:</label>
+        <input type="number" id="n" name="n" step="any" required>
+        <br>
+        <label for="g">g (%):</label>
+        <input type="number" id="g" name="g" step="any">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Equivalencias</h2>
+    <table>
+        <tr>
+            <th>Factor</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>(F/P,i,n)</td>
+            <td><input type="text" id="equivalencia1" readonly></td>
+        </tr>
+        <tr>
+            <td>(P/F,i,n)</td>
+            <td><input type="text" id="equivalencia2" readonly></td>
+        </tr>
+        <tr>
+            <td>(P/A,i,n)</td>
+            <td><input type="text" id="equivalencia3" readonly></td>
+        </tr>
+        <tr>
+            <td>(A/P,i,n)</td>
+            <td><input type="text" id="equivalencia4" readonly></td>
+        </tr>
+        <tr>
+            <td>(F/A,i,n)</td>
+            <td><input type="text" id="equivalencia5" readonly></td>
+        </tr>
+        <tr>
+            <td>(A/F,i,n)</td>
+            <td><input type="text" id="equivalencia6" readonly></td>
+        </tr>
+        <tr>
+            <td>(P/G,i,n)</td>
+            <td><input type="text" id="equivalencia7" readonly></td>
+        </tr>
+        <tr>
+            <td>(A/G,i,n)</td>
+            <td><input type="text" id="equivalencia8" readonly></td>
+        </tr>
+        <tr>
+            <td>(P/A,i,g,n)</td>
+            <td><input type="text" id="equivalencia9" readonly></td>
+        </tr>
+    </table>
+    <script src="equivalencias.js"></script>
+</html>
