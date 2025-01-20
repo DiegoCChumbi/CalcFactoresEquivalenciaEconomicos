@@ -8,10 +8,10 @@
 <body>
     <h1>Factores de equivalencia</h1>
     <div id="contenedor">
-        <div>
-            <img src="Imagenes/grafico1.png" alt="Imagen1" class="rotate-right">
-        </div>
-        <div>
+        <div id="contenedor2">
+            <div>
+                <img src = "Imagenes/grafico1.png" class="rotate-right">
+            </div>
             <form id="input">
                 <label for="i">i (%):</label>
                 <input type="number" id="i" name="i" step="any" required>
@@ -24,54 +24,55 @@
                 <br>
                 <input type="submit" value="Calcular">
             </form>
+            <div>
+                <img src ="Imagenes/grafico2.png" class="rotate-left">
+            </div>
         </div>
         <div>
-            <img src="Imagenes/grafico2.png" alt="Imagen2" class="rotate-left">
+            <h2>Equivalencias</h2>
+            <table>
+                <tr>
+                    <th>Factor</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>(F/P,i,n)</td>
+                    <td><input type="text" id="equivalencia1" readonly></td>
+                </tr>
+                <tr>
+                    <td>(P/F,i,n)</td>
+                    <td><input type="text" id="equivalencia2" readonly></td>
+                </tr>
+                <tr>
+                    <td>(P/A,i,n)</td>
+                    <td><input type="text" id="equivalencia3" readonly></td>
+                </tr>
+                <tr>
+                    <td>(A/P,i,n)</td>
+                    <td><input type="text" id="equivalencia4" readonly></td>
+                </tr>
+                <tr>
+                    <td>(F/A,i,n)</td>
+                    <td><input type="text" id="equivalencia5" readonly></td>
+                </tr>
+                <tr>
+                    <td>(A/F,i,n)</td>
+                    <td><input type="text" id="equivalencia6" readonly></td>
+                </tr>
+                <tr>
+                    <td>(P/G,i,n)</td>
+                    <td><input type="text" id="equivalencia7" readonly></td>
+                </tr>
+                <tr>
+                    <td>(A/G,i,n)</td>
+                    <td><input type="text" id="equivalencia8" readonly></td>
+                </tr>
+                <tr>
+                    <td>(P/A,i,g,n)</td>
+                    <td><input type="text" id="equivalencia9" readonly></td>
+                </tr>
+            </table>
         </div>
     </div>
-
-    <h2>Equivalencias</h2>
-    <table>
-        <tr>
-            <th>Factor</th>
-            <th>Valor</th>
-        </tr>
-        <tr>
-            <td>(F/P,i,n)</td>
-            <td><input type="text" id="equivalencia1" readonly></td>
-        </tr>
-        <tr>
-            <td>(P/F,i,n)</td>
-            <td><input type="text" id="equivalencia2" readonly></td>
-        </tr>
-        <tr>
-            <td>(P/A,i,n)</td>
-            <td><input type="text" id="equivalencia3" readonly></td>
-        </tr>
-        <tr>
-            <td>(A/P,i,n)</td>
-            <td><input type="text" id="equivalencia4" readonly></td>
-        </tr>
-        <tr>
-            <td>(F/A,i,n)</td>
-            <td><input type="text" id="equivalencia5" readonly></td>
-        </tr>
-        <tr>
-            <td>(A/F,i,n)</td>
-            <td><input type="text" id="equivalencia6" readonly></td>
-        </tr>
-        <tr>
-            <td>(P/G,i,n)</td>
-            <td><input type="text" id="equivalencia7" readonly></td>
-        </tr>
-        <tr>
-            <td>(A/G,i,n)</td>
-            <td><input type="text" id="equivalencia8" readonly></td>
-        </tr>
-        <tr>
-            <td>(P/A,i,g,n)</td>
-            <td><input type="text" id="equivalencia9" readonly></td>
-        </tr>
-    </table>
     <script src="equivalencias.js"></script>
 </html>
