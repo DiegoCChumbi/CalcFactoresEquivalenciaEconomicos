@@ -1,8 +1,9 @@
-document.getElementById("input").addEventListener('submit', function(event) {
+document.getElementById("inputForm").addEventListener('submit', function(event) {
     event.preventDefault();
-    const i = parseFloat(document.getElementById("i").value)/100;
-    const n = parseFloat(document.getElementById("n").value);
-    const g = (parseFloat(document.getElementById("g").value) || 0)/100;
+    console.log("Formulario enviado");
+    const i = parseFloat(document.getElementById("i").value.replace(',','.'))/100;
+    const n = parseFloat(document.getElementById("n").value.replace(',','.'));
+    const g = (parseFloat(document.getElementById("g").value.replace(',','.')) || 0)/100;
     console.log("Valor de i: ", i);
     console.log("Valor de n: ", n);
     console.log("Valor de g: ", g);
@@ -16,7 +17,7 @@ document.getElementById("input").addEventListener('submit', function(event) {
     const equivalencia7 = ((1+i)**n - (i*n) - 1)/((i**2) * (1+i)**n); // (P/G,i,n)
     const equivalencia8 = (1/i) - (n/(((1+i)**n) - 1)); // (A/G,i,n)
     const equivalencia9 = ((1+i)**n-i*n-1)/(i**2); // (F/G,i,n)
-
+    
     let equivalencia10;
     if (g === 0) {
         equivalencia10 = "No aplicable";
